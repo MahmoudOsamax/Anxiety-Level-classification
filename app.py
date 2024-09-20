@@ -3,7 +3,7 @@ from flask import Flask, request, jsonify
 import pickle
 from sklearn.preprocessing import LabelEncoder
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Load the pre-trained model
 model = pickle.load(open('model.pkl', 'rb'))
