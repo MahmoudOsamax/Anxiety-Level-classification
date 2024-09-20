@@ -57,7 +57,7 @@ def predict():
         anxiety_level = "None-minimal"
     else:
         anxiety_level = "Severe"
-    return render_template('index.html', classification_text=f"Your anxiety level: {anxiety_level}")
+    
 
     # Return the prediction as a JSON response
     return jsonify({"anxiety_level": anxiety_level})
